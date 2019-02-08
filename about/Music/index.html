@@ -71,22 +71,14 @@ function showSlides(n) {
 }
 </script>
 
-<?php$result=mysql_query("select * from playlist")
-while($rows=mysql_fetch_array($result))
-{?>
-<embed name="music_playlist" src="<?php echo $rows['/music/music_playlist.m3u']"
-       width="300" height="75" loop="false" hidden="false"
-       autostart="true">
-</embed>
-}
 
-<!-- <embed name="music_playlist"
+<embed name="music_playlist"
     src="/music/music_playlist.m3u"
     width="300"
     height="90"
     loop="false"
     hidden="false"
     autostart="true">
-</embed> -->
+</embed>
 
 <a href="/">Return Home</a></p>
