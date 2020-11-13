@@ -5,61 +5,67 @@ title: In Son's Teaching Materials
 <h1>{{ page.title }}</h1>
 
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 40%;
-  border-radius: 5px; /* 5px rounded corners */
-}
+ 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 40%;
+        border-radius: 5px; /* 5px rounded corners */
+      }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
 
-img {
-  border-radius: 5%;
-}
+      img {
+        border-radius: 5%;
+      }
+      .container {
+        padding: 2px 16px;
+      }
+    </style>
+  </head>
   
-.container {
-  padding: 2px 16px;
-}
-</style>
-</head>
-<body>
+  /* Body */
+  <body>
 
-<h2>Portfolio</h2>
-
-<div class="card">
-  <img src="covid19.PNG" alt="Avatar" style="width:100%">
-  <div class="container">
-    <h4><b>COVID-19 Animation</b></h4> 
-    <p>Python Plotly</p> 
-  </div>
-</div>
-
-</body>
-
-
-<div style="text-align: center; margin-left: 15%; margin-right: 15%; 
-  background-color: beige">
+    <h2>Portfolio</h2>
+    <div class="card">
+      <img src="covid19.PNG" alt="Avatar" style="width:100%">
+      <div class="container">
+        <h4><b>COVID-19 Animation</b></h4> 
+        <p>Python Plotly</p> 
+      </div>
+    </div>
+  </body>
   
-<h2 id="course-materials">Visualization Galleries</h2>
-<div style="text-align: left; margin-left: 10%; margin-right: 10%; line-height: 0.5">
-  <font size = "4pt">
+  /* Create a linked card */
+  <link rel="stylesheet" href="covid_infected_map.html">
+  <a href="" class="custom-card">
     
-<p><a href="Candlestick_Plot.html">Python Visualization - Candlestick Chart</a></p> 
-<p><a href="COVID_WorldMap_Animation.html">Python Visualization - Plotly COVID-19 Outbreak Animation</a></p>
-<p><a href="Office_Hour_Week2.html">Python Visualization - Probability Plots</a></p>\
-<p><a href="Office_Hour_Week1.html">Python Visualization - Matplotlib Architecture</a></p> 
-<p><a href="#">R Visualization - Plotly</a></p>
-<p><a href="#">R Visualization - Miscellaneous </a></p> 
-    
-  </font>
-</div>
-</div>
+    <div style="text-align: center; 
+                margin-left: 15%; 
+                margin-right: 15%; 
+                background-color: beige">
+
+      <h2 id="course-materials">Visualization Galleries</h2>
+      <div style="text-align: left; margin-left: 10%; margin-right: 10%; line-height: 0.5">
+        <font size = "4pt">
+
+          <p><a href="Candlestick_Plot.html">Python Visualization - Candlestick Chart</a></p> 
+          <p><a href="COVID_WorldMap_Animation.html">Python Visualization - Plotly COVID-19 Outbreak Animation</a></p>
+          <p><a href="Office_Hour_Week2.html">Python Visualization - Probability Plots</a></p>\
+          <p><a href="Office_Hour_Week1.html">Python Visualization - Matplotlib Architecture</a></p> 
+          <p><a href="#">R Visualization - Plotly</a></p>
+          <p><a href="#">R Visualization - Miscellaneous </a></p> 
+
+        </font>
+      </div>
+    </div>
+  </a>  
 </html>
   
 <a href="/">Return Home</a></p>
