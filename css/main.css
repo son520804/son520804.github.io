@@ -44,10 +44,11 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
+
 h1 {
-    font-size: 2em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+    font-family: 'Tangerine', serif;   
+    font-size: 48px;
+  }
 
 .multiline {
   white-space: pre-wrap;
