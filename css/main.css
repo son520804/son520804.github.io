@@ -9,6 +9,8 @@ a:hover {
 body {
     margin: 60px auto;
     width: 70%;
+    font-family: 'Indie Flower', cursive;
+    height: 100%;
 }
 
 .center {
