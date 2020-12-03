@@ -8,6 +8,7 @@ a:hover {
 
 blockquote {
   display: block;
+  font-family: 'Indie Flower', cursive;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
@@ -17,8 +18,13 @@ blockquote {
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: 'Indie Flower', cursive;
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family:
     height: 100%;
+}
+
+b {
+  font-weight: 800
 }
 
 .center {
@@ -65,7 +71,7 @@ h1 {
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Roboto Slab', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -79,6 +85,7 @@ nav ul li, footer ul li {
 p {
     font-size: 1.2em;
     line-height: 1.15em;
+    font-weight: 200
     color: #DCDCDC;
 }
 
@@ -86,6 +93,7 @@ p {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
+
 }
 
 ul.posts li {
