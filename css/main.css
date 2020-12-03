@@ -66,6 +66,17 @@ h1 {
     font-size: 48px;
   }
 
+li a{
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+}
+
+li a.active {
+  background-color: #5daf4c;
+}
+
+
 .multiline {
   white-space: pre-wrap;
 }
@@ -94,6 +105,18 @@ ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
 
+}
+
+/* Create alternative list showing teaching subjects */
+ul2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 ul.posts li {
