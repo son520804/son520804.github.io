@@ -107,17 +107,6 @@ ul.posts {
 
 }
 
-/* Create alternative list showing teaching subjects */
-ul2 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
 
 ul.posts li {
     list-style: none;
