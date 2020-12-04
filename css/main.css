@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: #0000ff;
@@ -34,6 +38,18 @@ b {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
 }
 
 div.gallery {
@@ -78,7 +94,14 @@ footer ul li {
 h1 {
     font-family: 'Tangerine', serif;
     font-size: 48px;
+    word-break: break-all;
   }
+
+h3 {
+  font-family: 'Tangerine', serif;
+  font-size: 32px;
+  word-break: break-all;
+}
 
 /*li a{
   display: block;
@@ -89,7 +112,24 @@ h1 {
 li a.active {
   background-color: #5daf4c;
 }*/
+.main {
+  max-width: 1000px;
+  margin:auto;
+}
 
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
 .multiline {
   white-space: pre-wrap;
@@ -118,6 +158,21 @@ p {
     color: #D3D3D3
 }
 
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 6px;
+}
+
+/* Clear floats after rows */
+.row::after {
+  content: "";
+  display: table;
+  clear:both;
+}
 
 ul.posts {
     margin: 20px auto 40px;
