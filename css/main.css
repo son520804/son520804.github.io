@@ -63,6 +63,7 @@ b {
 /* Hover on Parent Container */
 .content:hover {
   cursor: pointer;
+  border: 1.5px solid #777;
 }
 
 .content:hover .overlay{
@@ -70,18 +71,20 @@ b {
   opacity: 0.7;
 }
 
-div.gallery {
+.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  height: "300";
+  position:relative;
 }
 
-div.gallery:hover {
+.gallery:hover {
+  cursor: pointer;
   border: 1px solid #777;
 }
 
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
 }
