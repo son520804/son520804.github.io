@@ -63,6 +63,18 @@ footer {
     font-size: .8em;
 }
 
+footer ul {
+    font-family:'Roboto Slab', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
 h1 {
     font-family: 'Tangerine', serif;
     font-size: 48px;
@@ -83,17 +95,21 @@ li a.active {
   white-space: pre-wrap;
 }
 
-nav ul, footer ul {
+.nav ul {
     font-family:'Roboto Slab', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+
+nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
+.nav li:last-child {
+  margin-right: 0;
+}
 
 p {
     font-size: 1.2em;
