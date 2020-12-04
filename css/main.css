@@ -20,6 +20,8 @@ body {
     width: 70%;
     /*font-family: 'Indie Flower', cursive;*/
     font-family: 'Roboto Slab', cursive;
+    font-style: normal;
+    font-weight: 200;
     height: 100%;
 }
 
