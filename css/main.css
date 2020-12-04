@@ -12,7 +12,7 @@ a:hover {
 
 blockquote {
   display: block;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Roboto Slab', cursive;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
@@ -116,7 +116,7 @@ h1 {
   }
 
 h3 {
-  font-family: 'Tangerine', serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 32px;
   word-break: break-all;
 }
