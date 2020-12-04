@@ -189,10 +189,10 @@ nav ul li {
   font-size: 18px;
   font-family: 'Roboto Slab';
   position: absolute;
-  top: 20%;
-  left:20%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  top: 50%;
+  left:50%;
+  transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
 }
 
 p {
