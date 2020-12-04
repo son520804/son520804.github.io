@@ -12,7 +12,7 @@ a:hover {
 
 blockquote {
   display: block;
-  font-family: 'Roboto Slab', cursive;
+  font-family: 'Roboto Slab', 'Sans-Serif';
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
@@ -22,8 +22,8 @@ blockquote {
 body {
     margin: 60px auto;
     width: 70%;
-    /*font-family: 'Indie Flower', cursive;*/
-    font-family: 'Roboto Slab', cursive;
+    /*font-family: 'Indie Flower';*/
+    font-family: 'Roboto Slab', 'Sans-Serif';
     font-style: normal;
     font-weight: 200;
     height: 100%;
