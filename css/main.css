@@ -65,7 +65,7 @@ b {
   cursor: pointer;
 }
 
-.content:hover div{
+.content:hover .overlay{
   visibility: visible;
   opacity: 0.7;
 }
@@ -167,6 +167,32 @@ nav ul li {
 
 .nav li:last-child {
   margin-right: 0;
+}
+
+/* Customize Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+/* Customize Overlay Text */
+.overlay_text {
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto Slab';
+  position: absolute;
+  top: 20%;
+  left:20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 p {
