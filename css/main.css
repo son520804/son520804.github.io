@@ -185,7 +185,7 @@ nav ul li {
 
 /* Customize Overlay Text */
 .overlay_text {
-  color: white;
+  color: green;
   font-size: 18px;
   font-family: 'Roboto Slab';
   position: absolute;
