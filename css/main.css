@@ -130,9 +130,7 @@ h3 {
   padding: 8px 16px;
 }
 
-li a.active {
-  background-color: #5daf4c;
-}*/
+
 .main {
   max-width: 1000px;
   margin:auto;
@@ -156,6 +154,14 @@ li a.active {
   white-space: pre-wrap;
 }
 
+.nav{
+    display: inline;
+    margin-right: 5% auto 0 auto;
+    width: 85%;
+    box-shadow: 0 4px 12px rgba(black, 0.1);
+    color: #f0f0f0;
+}
+
 .nav ul {
     font-family:'Roboto Slab', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -163,13 +169,38 @@ li a.active {
     font-weight: bold;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.nav a {
+  display: block;
+  padding: 0 16px;
+  line-height: inherit;
+  cursor: pointer;
 }
 
-.nav li:last-child {
-  margin-right: 0;
+.nav__menu {
+  line-height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav__menu-item {
+  display: inline-block;
+  position: relative;
+}
+.nav__menu-item:hover {
+  background-color: #9b59b6;
+}
+.nav__menu-item:hover .nav__submenu {
+  display: block;
+}
+.nav__submenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  width: 220px;
+  background-color: #9b59b6;
+}
+.nav__submenu-item:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Customize Overlay */
