@@ -154,8 +154,16 @@ h3 {
   white-space: pre-wrap;
 }
 
+nav {
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .nav{
-    display: inline;
     margin-right: 5% auto 0 auto;
     width: 85%;
     box-shadow: 0 4px 12px rgba(black, 0.1);
