@@ -165,8 +165,8 @@ nav {
 
 .nav{
 
-    margin-right: 5% auto 0 auto;
-    width: 85%;
+    margin-right: 0 auto 0 auto;
+    width: 95%;
     background: darken());
     color: #f0f0f0;
 }
@@ -180,13 +180,13 @@ nav {
 
 .nav a {
   display: block;
-  padding: 0 16px;
+  padding: 0 10px;
   line-height: inherit;
   cursor: pointer;
 }
 
 .nav__menu {
-  line-height: 45px;
+  line-height: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -205,7 +205,7 @@ nav {
   text-transform: none;
   display: none;
   position: absolute;
-  width: 220px;
+  width: 200px;
   background-color: #9b59b6;
 }
 .nav__submenu-item:hover {
