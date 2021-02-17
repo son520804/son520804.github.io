@@ -186,8 +186,8 @@ nav {
 }
 
 .nav__menu {
-  line-height: 40px;
-  font-weight: 700;
+  line-height: 30px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .nav__menu-item {
