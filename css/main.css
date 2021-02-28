@@ -173,14 +173,14 @@ nav {
 
 .nav ul {
     font-family:'Roboto Slab', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 5px;
     list-style: none;
     font-weight: bold;
 }
 
 .nav a {
   display: block;
-  padding: 0 10px;
+  padding: 0 25px;
   line-height: inherit;
   cursor: pointer;
 }
@@ -205,7 +205,7 @@ nav {
   text-transform: none;
   display: none;
   position: absolute;
-  width: 100px;
+  width: 120px;
   background-color: #9b59b6;
 }
 .nav__submenu-item:hover {
