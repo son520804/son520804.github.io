@@ -67,6 +67,7 @@ b {
 }
 
 .content:hover .overlay{
+  visibility: visible;
   opacity: 1;
 }
 
@@ -227,15 +228,15 @@ nav {
 
 /* Customize Overlay Text */
 .overlay_text {
-  color: #000000;
+  color: green;
   font-size: 18px;
   font-family: 'Roboto Slab';
   position: absolute;
   top: 50%;
   left:50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
 }
 
 p {
