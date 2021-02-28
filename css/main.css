@@ -67,8 +67,7 @@ b {
 }
 
 .content:hover .overlay{
-  visibility: visible;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .gallery {
@@ -173,7 +172,7 @@ nav {
 
 .nav ul {
     font-family:'Roboto Slab', 'Arial', 'Sans-Serif';
-    padding: 5px;
+    padding: 3px;
     list-style: none;
     font-weight: bold;
 }
@@ -234,8 +233,9 @@ nav {
   position: absolute;
   top: 50%;
   left:50%;
-  transform: translate(-20%, -20%);
-  -ms-transform: translate(-20%, -20%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 p {
