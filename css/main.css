@@ -227,7 +227,7 @@ nav {
 
 /* Customize Overlay Text */
 .overlay_text {
-  color: green;
+  color: #000000;
   font-size: 18px;
   font-family: 'Roboto Slab';
   position: absolute;
