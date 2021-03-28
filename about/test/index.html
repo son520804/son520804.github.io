@@ -1,9 +1,16 @@
 <!DOCTYPE html>
+<!-- https://www.youtube.com/watch?v=mI4mRSsXMy0 -->
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/default/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Learnersourcing Discussion Board - InSon Forum Software</title>
+  <script src="jquery-3.6.0.min.js"></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
+<!-- <style>
+.cont {
   position: relative;
   width: 50%;
 }
@@ -42,19 +49,223 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-</style>
+</style> -->
 </head>
-<body>
 
-<h2>Fade in Overlay</h2>
-<p>Hover over the image to see the effect.</p>
+<div class="headerFixedBar">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="pullleft">
+        <a class="headerLogoText" href="index.html" title="insonforum.com"><img class="headerLogoImage" src="assets/default/images/logo.png">Applied Probabilistic Data Science Specialization Forum</a>
+      </div>
 
-<div class="container">
-  <img src="Bayesian_Analysis.png" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">Hello World</div>
+      <div class="pullright">
+        <a class="btn btn-primary themeButton" href="index.html?logout" title="insonforum.com" tooltip="test">Logout</a>
+      </div>
+    </div>
   </div>
 </div>
 
+<body>
+  <!-- <h2>Fade in Overlay</h2>
+  <p>Hover over the image to see the effect.</p> -->
+
+  <!-- <div class="container">
+    <img src="Bayesian_Analysis.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
+  </div> -->
+
+<!-- forum structure layout -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 paginationBar forumModule forumMargin">
+        <!-- use font awesome icons: I chose chevron-circle-right https://fontawesome.com/icons can make drop down list -->
+        <a href="#">Home</a> <i class="fa fa-chevron-circle-right paginationArrow"></i> <a href="#">Category</a> <i class="fa fa-chevron-circle-right paginationArrow"></i> <a href="#">Discussion</a>
+      </div>
+    </div>
+
+    <div id="category_1" class="row forumModule forumMargin">
+
+      <div class="col-lg-12 columnPad">
+        <a href="#" onclick=showDiscussions(1);>
+          <div class="pullleft">
+          <!-- add bolded text -->
+            <h1>Discussion Category</h1>
+          </div>
+        </a>
+        <div class="pullright">
+          <!-- add time of discussion -->
+           <a id="startDiscussionButton_1" class="btn btn-primary themeButton" href="#" onclick="startDiscussions(1)">Start Discussion</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cat_new_discussion_1" class="row forumPad" style="display:none;">
+      <div class="col-lg-12">
+        <!-- Check Bootstrap Forms -->
+        <form>
+          <div class="form-group">
+            <!-- Set up Title box and Text area box -->
+            Title
+            <input type="text" name="newDiscussionTitle" class="form-control" size="40"></input>
+            <br />
+            Content
+            <textarea class="new_DiscussionText form-control" rows="10" cols="80">Test</textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="cat_discussions_1" class="row forumPad" style="display:none;">
+      <table class="forumTable">
+        <!-- table head -->
+        <thead>
+          <th>
+            Discussion
+          </th>
+          <th>
+            Author
+          </th>
+          <th>
+            Replies
+          </th>
+        </thead>
+
+        <tr class="forumModule">
+          <td>
+            <a href="#">Discussion name here</a>
+          </td>
+          <td>
+            <a href="#">Guess who wrote the prompt</a>
+          </td>
+          <td class = "pullright">
+            <a href="#">27 times</a>
+          </td>
+        </tr>
+
+        <tr class="forumModule">
+          <td>
+            <a href="#">Discussion name here</a>
+          </td>
+          <td>
+            <a href="#">Guess who wrote the prompt</a>
+          </td>
+          <td class = "pullright">
+            <a href="#">27 times</a>
+          </td>
+        </tr>
+
+      </table>
+      <!-- <div class="col-lg-12" style="margin-top:5px;">
+        <div class="pullright">
+           <a class="btn btn-primary themeButton" href="#" onclick="startDiscussion(1)">Start Discussion</a>
+        </div>
+      </div> -->
+    </div>
+
+    <div id="category_2" class="row forumModule forumMargin">
+
+      <div class="col-lg-12 columnPad">
+        <a href="#" onclick=showDiscussions(2);>
+          <div class="pullleft">
+          <!-- add bolded text -->
+            <h1>Discussion Category</h1>
+          </div>
+        </a>
+        <div class="pullright">
+          <!-- add time of discussion -->
+          15000 discussions
+        </div>
+      </div>
+    </div>
+
+    <div id="cat_new_discussion_2" class="row forumPad" style="display:none;">
+      <div class="col-lg-12">
+        <!-- Check Bootstrap Forms -->
+        <form>
+          <div class="form-group">
+            <!-- Set up Title box and Text area box -->
+            Title
+            <input type="text" name="newDiscussionTitle" class="form-control" size="40"></input>
+            <br />
+            Content
+            <textarea class="new_DiscussionText form-control" rows="10" cols="80">Test</textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div id="cat_discussions_2" class="row forumPad" style="display:none;">
+      <table class="forumTable">
+        <!-- table head -->
+        <thead>
+          <th>
+            Discussion
+          </th>
+          <th>
+            Author
+          </th>
+          <th>
+            Replies
+          </th>
+        </thead>
+
+        <tr class="forumModule">
+          <td>
+            <a href="#">Discussion name here</a>
+          </td>
+          <td>
+            <a href="#">Guess who wrote the prompt</a>
+          </td>
+          <td class = "pullright">
+            <a href="#">27 times</a>
+          </td>
+        </tr>
+
+        <tr class="forumModule">
+          <td>
+            <a href="#">Discussion name here</a>
+          </td>
+          <td>
+            <a href="#">Guess who wrote the prompt</a>
+          </td>
+          <td class = "pullright">
+            <a href="#">27 times</a>
+          </td>
+        </tr>
+
+      </table>
+      <div class="col-lg-12" style="margin-top:5px;">
+        <div class="pullright">
+           <a id="startDiscussionButton_2" class="btn btn-primary themeButton" href="#" onclick="startDiscussions(2)">Start Discussion</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <p>The Applied Probabilistic Data Science with Python specialization takes the advantage of the ever-increasing significance of Bayesian methods applied to data science questions in both academic and commercial scenarios. Since high-performing computation technology has been ever-evolving, we take advantage of the high computing performance by instructing students to fully deploy the potential of Bayesian methods and simulations and yield richer scientific results than using classical modeling methods. We envision that a great population of students will benefit from this programming-based open online courses regarding Bayesian statistics, which allows students without professional background to grasp the Bayesian programming knowledge. </p>
+
+  <p>This series of courses is particularly suitable for novice programmers who want to improve programming skills, learn statistics and grow a new analytic mindset. Conversational programmers are also encouraged to learn important techniques through practicing hands-on and step-guided projects. Students from all countries, language preference, and major of study are invited to take this series to start with forming a Bayesian thinking mindset and then build practical tasks using statistical methods. Programmers with little experience in Bayesian statistics and know some visualization are encouraged to enrol in this specialization.</p>
+
+  <p>The learning objectives of the first two courses are to explain what Bayesian thinking is and go through fundamental Bayesian estimation techniques. Real-life examples (e.g. Monty Hall problem, Click through rate, Conversion, etc.) and code demonstrations serve as main components in the courses to help students without statistical background to learn various Bayesian methods through practical tasks, thus forming students’ knowledge of the Bayesian framework. The course emphasizes updating rules and interpretation of Bayesian statistical components, where the code will be provided for each essential technique. In addition, the course will introduce scipy, PyMC3 and PyStan when demonstrating Bayesian modeling techniques (e.g. Bayesian Regression, Visualize Posteriors, Hierarchical Modeling, Model Comparison). The first two courses are suitable for students who have approximately a year of experience (including those who have never heard of Bayesian) in data science and less than 1 year experience in using Bayesian methods outside of the course.</p>
+
+  <p>The learning objectives of the last (1-2) course are to go deeper to demystify how to make predictions on unknown outcomes using deep learning based on the Bayesian framework. We will simulate practical problems such as optimizing click through rate, conversion, personalized message system, and recommender system using code demonstration and step-guided projects, followed with coding assignments to drill technical expertise in Bayesian analysis. The modeling and algorithms include, but are not limited to, Markov Chain Monte Carlo algorithm, Bayesian Hypothesis Testing, Bayesian Classification algorithms, and Bayesian reinforcement learning (e.g. multi-armed bandit and contextual bandit). The course will begin with introducing Bayesian hypothesis testing using PyMC3 in practical experiments, and introduce Bayes’ Factor, a powerful tool to compare competing hypotheses and make informed decisions for a better outcome using the probabilistic way. In week 2 to week 3, it will introduce Bayesian reinforcement learning and will brush up novel algorithms (e.g. UCB, Epsilon-Greedy, Thompson Sampling) that optimizes design when multiple competing recommendations exist. The techniques behind-the-scene such as specifying loss function, visualizing cumulative rewards and regret and hyperparameter tuning will be discussed during step-by-step projects. At the end of the course students will conduct a capstone project to design their own bandit problems and deploy algorithms to conduct Bayesian experimentation using Python toolkits. Taking advantage of high-performance computing, this course will develop students with real-life applications of Bayesian methods in experimentations.</p>
+
+
 </body>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="assets/default/js/script.js" type="text/javascript"></script>
+
+
 </html>

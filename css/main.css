@@ -51,6 +51,7 @@ b {
   background-color: white;
   padding: 10px;
   position: relative;
+  width: 50%;
 }
 
 /* Child Text Container */
@@ -112,15 +113,42 @@ footer ul li {
     margin-right: 20px;
 }
 
+/* Headers */
+
 h1 {
     font-family: 'Tangerine', serif;
-    font-size: 48px;
+    font-size: 54px;
     word-break: break-all;
   }
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  word-break: break-all;
+}
 
 h3 {
   font-family: 'Roboto Slab', serif;
   font-size: 32px;
+  word-break: break-all;
+}
+
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  word-break: break-all;
+}
+
+h5 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  word-break: break-all;
+}
+
+h6 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
   word-break: break-all;
 }
 

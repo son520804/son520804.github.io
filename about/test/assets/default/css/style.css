@@ -1,0 +1,211 @@
+/* specify header fixed bar */
+.headerFixedBar{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: white;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:90%;
+  height:auto;
+}
+
+/* specify text associated with logo */
+.headerLogoText {
+  color:purple;
+  font-size: 1.2em;
+  line-height: 1.2em;
+
+}
+
+/* specify text associated with logo when hovering */
+.headerLogoText:hover{
+  color: inherit;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* specify attributes for logo image */
+.headerLogoImage{
+  width: 55px;
+  height: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+/* specify the theme button */
+.themeButton{
+  background-color: #562e72;
+  color:white;
+  border-color: black;
+  border-width: thin;
+  font-weight: 500;
+}
+
+/* specify the theme button */
+.themeButton{
+  background-color: white;
+  color: #663399; /* dark purple */
+  border-width: thin;
+  border-color: #562e72;
+  font-weight: 700;
+}
+
+/* Set up for a link - click highlight button */
+.themeButton.focus {
+  outline:0;
+}
+
+/* specify the background characteristics of the forum module */
+.forumModule{
+  background-color: white;
+  color:black;
+  overflow: none;
+
+}
+
+/* Give more flexibility to the category module in table */
+.categoryModule{
+  background-color: white;
+  color:black;
+  overflow: none;
+  margin-top: 35px;
+
+}
+
+/* specify the attributes for forum pad */
+.forumPad{
+  padding-top: 5px;
+  padding-bottom: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* specify the attributes for the margin of forum */
+.forumMargin{
+  margin-bottom: 10px;
+}
+
+/* specify the attributes for the forum table: solid black line */
+.forumTable{
+  width:100%;
+  height:auto;
+  border: 1px solid #562e72;
+}
+
+/* specify attributes for new head and cell in table */
+.forumTable th{
+  padding:5px;
+  color:#808080;
+}
+
+.forumTable tr{
+  border:1px solid #f2f2f2;
+  border-spacing: 10px;
+}
+
+.forumTable td{
+  padding:5px;
+}
+
+/* specify the pagination arrow - set as grey */
+.paginationArrow{
+  color:#9e9e9e;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* specify the pagination bar - set as grey */
+.paginationBar{
+  padding: 15px;
+}
+
+/* fix mobile phone pull left and right issue */
+.pullleft{
+  float:left;
+  display: inline-block;
+}
+
+.pullright{
+  float:right;
+  display: inline-block;
+}
+
+/* specify column pad */
+.columnPad{
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+/* customize vertical middle */
+.vmiddle{
+  display:inline-block;
+  position: relative;
+  margin: auto;
+  vertical-align: middle;
+}
+
+
+/* specify body and html */
+
+html{
+  background-color: #f2f2f2;
+}
+
+body{
+  background-color: #f2f2f2;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* specify the a tag - color purple, when hovers, change to dark purple and increase font-weight to 500 */
+a{
+  color: #663399;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #562e72;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* overwrite the a:hover property if it's inside the table */
+.forumTable a:hover{
+  font-weight:normal;
+  color: pink;
+
+}
+
+/* Customize the discussion text area */
+.newDiscussionText{
+  width:100%;
+  height:auto;
+  background-color: white;
+  color:#562e72;
+
+}
+
+h1{
+  font-size:1.7em;
+}
+
+h2{
+  font-size:1.5em;
+}
+
+h3{
+  font-size:1.3em;
+}
+
+h4{
+  font-size:1.1em;
+}
