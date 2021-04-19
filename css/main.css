@@ -229,11 +229,11 @@ nav {
   display: block;
 }
 .nav__submenu {
-  font-weight: 300;
+  font-weight: 250;
   text-transform: none;
   display: none;
   position: absolute;
-  width: 120px;
+  width: 250px;
   background-color: #9b59b6;
 }
 .nav__submenu-item:hover {
