@@ -23,7 +23,6 @@ blockquote {
 
 body {
     margin: 60px auto;
-    width: 70%;
     /*font-family: 'Indie Flower';*/
     font-family: 'Roboto Slab', 'Sans-Serif';
     font-style: normal;
@@ -42,11 +41,24 @@ b {
   width: 60%;
 }
 
-/* Create four equal columns that floats next to each other */
-.column {
+/* Create two equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50.0%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column3 {
   float: left;
   width: 33.3%;
 }
+
+.container{
+  width:70%;
+  margin:30px auto;
+  padding:10px;
+}
+
 
 /* Parent Container */
 .content {
@@ -54,6 +66,13 @@ b {
   padding: 10px;
   position: relative;
   width: 50%;
+}
+
+.content-area{
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Child Text Container */
@@ -72,6 +91,11 @@ b {
 .content:hover .overlay{
   visibility: visible;
   opacity: 1;
+}
+
+.outer {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .gallery {
@@ -124,7 +148,7 @@ h1 {
   }
 
 h2 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Tangerine', serif;
   font-size: 40px;
   word-break: break-all;
 }
@@ -277,9 +301,10 @@ p {
 }
 
 #particles-js{
-  background-image: url('https://raw.githubusercontent.com/son520804/son520804.github.io/master/background.png');
+  width:100%;
   height: 100vh;
-  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('https://raw.githubusercontent.com/son520804/son520804.github.io/master/background.png');
+
   background-size: cover;
   background-position: center;
 }
@@ -309,4 +334,39 @@ ul.posts {
 ul.posts li {
     list-style: none;
     font-size: 1.1em;
+}
+
+.welcome {
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  color: #fff;
+}
+
+.welcome h1 {
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.welcome h2 {
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.welcome .btn{
+  border:none;
+  outline:none;
+  padding:15px;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-size:20px;
+  cursor:pointer;
+  color:grey;
+  background: LightGreen;
+
 }
