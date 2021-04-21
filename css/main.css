@@ -277,8 +277,9 @@ p {
 }
 
 #particles-js{
-  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(background.png);
+  background-image: url('https://raw.githubusercontent.com/son520804/son520804.github.io/master/background.png');
   height: 100vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
 }
