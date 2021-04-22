@@ -98,9 +98,17 @@ b {
   width: 80%;
   border: 5px solid #2d2d2d;
   display:flex;
-
+  flex-flow: row wrap;
   flex-direction: row;
   justify-content: center;
+}
+
+.flex-container > * {
+  padding: 10px;
+}
+
+.flex-container .header{
+  height:40px;
 }
 
 .gallery {
@@ -185,6 +193,7 @@ h6 {
 
 .left-content{
   flex:1;
+  min-width: 100px;
   margin-left: 0px;
   margin-right: 10px;
   margin-top: 10px;
@@ -213,6 +222,7 @@ li {
 
 .middle-content{
   flex:1;
+  min-width: 100px;
   margin-left: 10px;
   margin-right: 20px;
   margin-top: 10px;
@@ -326,9 +336,10 @@ p {
 }
 
 .right-content{
-  flex:1
-  margin-left: 20px;
-  margin-right: 0px;
+  flex:1;
+  min-width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
