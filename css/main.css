@@ -93,7 +93,14 @@ b {
 }
 
 .flex-container{
+  margin-left: 10%;
+  margin-top: 30px;
+  width: 80%;
+  border: 5px solid #2d2d2d;
   display:flex;
+
+  flex-direction: row;
+  justify-content: center;
 }
 
 .gallery {
@@ -176,17 +183,19 @@ h6 {
   word-break: break-all;
 }
 
-/*li a{
-  display: block;
-  color: #000;
-  padding: 8px 16px;
+.left-content{
+  flex:1;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  font-size:1.15em;
 }
 
 
-.main {
-  max-width: 1000px;
-  margin:auto;
-}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
@@ -200,6 +209,14 @@ h6 {
   .column {
     width: 100%;
   }
+}
+
+.middle-content{
+  flex:1;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .multiline {
@@ -306,6 +323,14 @@ p {
 
   background-size: cover;
   background-position: center;
+}
+
+.right-content{
+  flex:1
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .row {
