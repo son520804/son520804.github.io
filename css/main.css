@@ -103,13 +103,7 @@ b {
   justify-content: center;
 }
 
-.flex-container > * {
-  padding: 10px;
-}
-
-.flex-container .header{
-  height:40px;
-}
+.flex-container > *
 
 .gallery {
   margin: 5px;
@@ -194,10 +188,8 @@ h6 {
 .left-content{
   flex:1;
   min-width: 100px;
-  margin-left: 0px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 li {
@@ -223,10 +215,8 @@ li {
 .middle-content{
   flex:1;
   min-width: 100px;
-  margin-left: 10px;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .multiline {
@@ -338,10 +328,8 @@ p {
 .right-content{
   flex:1;
   min-width: 100px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .row {
