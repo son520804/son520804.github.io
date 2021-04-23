@@ -110,14 +110,15 @@ div.green{
   border-bottom: 5px solid #a7cf9b;
 }
 
+/* Full-width background, fixed-width content */
 div.inner{
   width:80%;
   margin:0 auto;
 }
 
 div.white{
-  background-color: #F0F0F0;
-  border-bottom: 5px solid #F0F0F0;
+  background-color: #E0E0E0;
+  border-bottom: 5px solid #E0E0E0;
 }
 
 
