@@ -98,6 +98,8 @@ div.desc {
   background-color: lightblue;
 }
 
+/* Create color palette for body chunks */
+
 div.blue{
   background-color: #b0cbdb;
   border-bottom: 5px solid #a0bfd1;
@@ -112,6 +114,12 @@ div.inner{
   width:80%;
   margin:0 auto;
 }
+
+div.white{
+  background-color: #F0F0F0;
+  border-bottom: 5px solid #F0F0F0;
+}
+
 
 /* Create flex container with 80% wideth and responsive display*/
 
