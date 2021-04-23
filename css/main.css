@@ -92,6 +92,29 @@ b {
   opacity: 1;
 }
 
+div.desc {
+  padding: 15px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+div.blue{
+  background-color: #b0cbdb;
+  border-bottom: 5px solid #a0bfd1;
+}
+
+div.green{
+  background-color: #badbb0;
+  border-bottom: 5px solid #a7cf9b;
+}
+
+div.inner{
+  width:80%;
+  margin:0 auto;
+}
+
+/* Create flex container with 80% wideth and responsive display*/
+
 .flex-container{
   margin-left: 10%;
   margin-top: 30px;
@@ -123,11 +146,6 @@ b {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-  background-color: lightblue;
-}
 
 footer {
     border-top: 1px solid #d5d5d5;
@@ -215,7 +233,7 @@ li {
 .middle-content{
   flex:1;
   min-width: 100px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
 }
 
@@ -320,9 +338,13 @@ p {
   width:100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('https://raw.githubusercontent.com/son520804/son520804.github.io/master/background.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  background-size: cover;
-  background-position: center;
+.particles-js-canvas-el{
+  position: absolute;
 }
 
 .right-content{
@@ -381,7 +403,7 @@ ul.posts li {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.welcome .btn{
+.btn{
   border:none;
   outline:none;
   padding:15px;
