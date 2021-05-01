@@ -28,7 +28,7 @@ body {
     font-weight: 300;
     height: 100%;
     word-spacing: 3px;
-    color: #404040;
+    color: #4d4d4d;
 }
 
 b {
@@ -191,7 +191,7 @@ h2 {
   font-family: 'Tangerine', serif;
   font-size: 40px;
   word-break: break-word;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -353,7 +353,6 @@ p {
     font-size: 1.1em;
     line-height: 1.5em;
     font-weight: 300;
-    color: #333333;
     word-break: break-word;
 }
 
