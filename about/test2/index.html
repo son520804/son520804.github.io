@@ -1,0 +1,13 @@
+<div id="app">
+    <img
+      v-bind:src="Home_1.png"
+      :alt="`${firstName} ${lastName}`"
+      :class="gender"
+    />
+    <link rel="stylesheet" href="style.css">
+    <script src=""
+    <h1>{{firstName}} {{lastName}}</h1>
+    <h3>Email: {{email}}</h3>
+    <button :class="gender" @click="getUser()">Get Random User</button>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+  </div>
