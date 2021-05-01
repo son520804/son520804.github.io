@@ -145,7 +145,7 @@ div.white{
 
 .gallery {
   margin: 5px;
-  border: 1px solid #ccc;
+  border: 1.5px solid #ccc;
   float: left;
   height: "300";
   position:relative;
@@ -159,8 +159,17 @@ div.white{
 .gallery img {
   width: 100%;
   height: auto;
+  object-fit: contain;
+  max-height: 350px;
 }
 
+.graph img{
+  width: 350px;
+  height:280px;
+  object-fit: contain;
+  min-width: 150px;
+  min-height: 120px;
+}
 
 footer {
     border-top: 1px solid #d5d5d5;
