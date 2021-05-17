@@ -4,7 +4,7 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
+export default new Vuex.store({
   state: {
     cart: [],
     products: [
@@ -54,33 +54,6 @@ export default new Vuex.Store({
           '53363-5.jpg',
         ]
       },
-      {
-        name: "Slim Fit Jeans",
-        id: 53364,
-        price: 29.5,
-        color: "navy",
-        size: {
-          waist: 32,
-          length: 32,
-        },
-        gender: "men",
-        quantity: 5,
-        dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
-        category: "Pants",
-        details: {
-          material: "denim",
-          fit: "slim",
-          maintenance: "machine wash cold with like colors, air dry",
-          additional: ""
-        },
-        images: [
-          '53364-1.jpg',
-          '53364-2.jpg',
-          '53364-3.jpg',
-          '53364-4.jpg',
-          '53364-5.jpg',
-        ]
-      },
     ]
   },
   mutations: {
@@ -90,4 +63,3 @@ export default new Vuex.Store({
 
   }
 });
-view rawstore.js hosted with ❤ by GitHub
