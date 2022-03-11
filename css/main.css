@@ -160,7 +160,7 @@ div.morewhite{
 
 .gallery:hover {
   cursor: pointer;
-  border: 1px solid #777;
+  border: 2px solid #777;
 }
 
 .gallery img {
@@ -384,6 +384,30 @@ p {
 .particles-js-canvas-el{
   position: absolute;
 }
+
+.research-interest {
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: stretch;
+  max-width: 80%;
+  margin: 1.5em;
+}
+
+@media (max-width: 650px) {
+  .research-interest {
+    display:flex;
+    font-size: 80%;
+  }
+
+  p{
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
 
 .right-content{
   flex:1;
