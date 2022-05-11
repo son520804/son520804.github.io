@@ -274,9 +274,10 @@ html{
 }
 
 li {
-  font-size:1.1em;
+  font-size:1.0em;
   margin-left: 18px;
-  line-height: 1.5em;
+  line-height: 1.4em;
+  font-weight: 400;
 }
 
 
@@ -318,7 +319,7 @@ nav {
 .nav{
 
     margin-right: 0 auto 0 auto;
-    width: 85%;
+    width: 95%;
     background: darken());
     color: #f0f0f0;
 }
@@ -530,7 +531,7 @@ p {
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 1.5em;
+    font-size: 1.3em;
 
 }
 
