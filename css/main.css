@@ -81,6 +81,19 @@ b {
   width: 33.3%;
 }
 
+/* Create unequal width columns -- ratio 2:1 */
+.columnlong {
+  flex: 2;
+  flex-basis: 66.67%;
+  background-color: #ccc;
+}
+
+.columnshort {
+  flex: 1;
+  flex-basis: 33.33%;
+  background-color: #aaa;
+}
+
 .container{
   width:70%;
   margin:30px auto;
