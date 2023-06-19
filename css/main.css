@@ -478,8 +478,9 @@ p {
 /* Design the scroll down button */
 .scroll-down{
   outline:none;
-  margin-top: 50px;
-  padding:15px;
+  position:fixed;
+  margin-top: 30px;
+  padding:15px 20px;
   font-size:20px;
   cursor:pointer;
   background: LightGreen;
