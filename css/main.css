@@ -12,6 +12,10 @@ a:hover {
     text-decoration: underline;
 }
 
+b {
+  font-weight: 900
+}
+
 blockquote {
   display: block;
   font-family: 'Roboto Slab', 'Sans-Serif';
@@ -31,8 +35,14 @@ body {
     color: #4d4d4d;
 }
 
-b {
-  font-weight: 900
+.body-dark-mode {
+    background-color: #4d4d4d;
+    color: #cccccc;
+}
+
+.body-light-mode {
+    background-color: #cccccc;
+    color: #4d4d4d;
 }
 
 .center {

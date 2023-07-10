@@ -27,3 +27,10 @@ let squareRoot = Math.sqrt(number); // find the square root of the number
 let roundedSquareRoot = Math.round(squareRoot); // round up when more than 0.5
 
 console.log(result)
+
+x == y // false, because == is a comparison operation indicating equality
+x != y // true, because != is a comparison operation indicating inequality
+x > y // x is strictly greater than y
+x < y // x is strictly smaller than y
+x >= y // x is greater than or equal to y
+x <= y // x is smaller than or equal to y
