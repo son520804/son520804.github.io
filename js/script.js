@@ -12,28 +12,19 @@ function setTheme() {
 
 setTheme();
 
-
-var flashingText = document.getElementById('flashing-text');
-
-
-// Optional: Wait for the document to load
-document.addEventListener('DOMContentLoaded', function() {
+var colorArray = ['black', 'green', 'blue', 'purple'];
+// Change the color at regular intervals
+function switchColor() {
     // Get the element
     var flashingText = document.getElementById('flashing-text');
-    
-    // Define an array of colors
-    var colorArray = ['black', 'red', 'blue', 'green', 'orange', 'purple'];
-    
     // Set an initial color
-    var currentColorIndex = 0;
-    flashingText.style.color = colorArray[currentColorIndex];
+    var currentColorIndex = colorArray.indexOf(flashingText.innerHTML);
+    // Increment the color index
+    var newColorIndex = (currentColorIndex + 1) % colorArray.length;
     
-    // Change the color at regular intervals
-    setInterval(function() {
-      // Increment the color index
-      var newColorIndex = (currentColorIndex + 1) % colorArray.length;
-      
-      // Set the new color
-      flashingText.style.color = colorArray[currentColorIndex];
-    }, 1000);
-  });
+    // Set the new color
+    flashingText.style.color = colorArray[newColorIndex];
+}
+
+// Change the color at regular intervals
+setInterval(switchColor, 1000);
