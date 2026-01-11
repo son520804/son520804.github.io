@@ -287,6 +287,7 @@ h6 {
 
 html{
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .left-content{
@@ -424,17 +425,34 @@ p {
     word-break: break-word;
 }
 
+#section1{
+  /* ensure hero section doesn't create extra space from page margins */
+  padding: 0;
+  margin: 0;
+}
+
+/* Hero / particles area: subtract the vertical body margins (60px top + 60px bottom)
+   so the visible hero fills the viewport without creating an extra shaded strip below. */
 #particles-js{
-  width:100%;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh - 120px); /* keeps site-wide body margins while making hero fill viewport */
+  min-height: 480px; /* fallback for very small screens */
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('https://raw.githubusercontent.com/son520804/son520804.github.io/master/background.png');
+  background-size: cover;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .particles-js-canvas-el{
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Research Interest style */
@@ -567,25 +585,38 @@ ul.posts li {
 }
 
 .welcome {
-  margin-left: 10%;
-  margin-right: 10%;
-  position: absolute;
+  /* place the text centered above the particle canvas and make it responsive */
+  position: relative;
+  margin: 0 auto;
   color: #fff;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
 }
 
 .welcome h1 {
-
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-family: "Lucida Console", "Courier New", monospace;
+  /* responsive sizing */
+  font-size: calc(18px + 3.2vw);
+  line-height: 1.05;
 }
 
 .welcome h2 {
-
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  font-size: 30px;
   font-family: "Lucida Console", "Courier New", monospace;
+  font-size: calc(12px + 1.6vw);
+  margin-top: 0.5rem;
+}
+
+/* Smaller screens adjustments */
+@media (max-width: 600px) {
+  #particles-js { height: calc(100vh - 80px); min-height: 380px; }
+  .welcome h1 { font-size: calc(20px + 5vw); }
+  .welcome h2 { font-size: calc(12px + 3vw); }
 }
 
 
