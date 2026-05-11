@@ -398,6 +398,21 @@ top of each other instead of next to each other */
   max-width: 1200px;
 }
 
+/* Page-scoped spacing for the dedicated music page */
+.music-page h1,
+.music-page p,
+.music-page .music-gallery-wrapper,
+.music-page #music-gallery {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Keep the gallery-grid responsive but add inner padding for small screens */
+.music-page .gallery-grid {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 .music-grid{
   display: grid;
   gap: 1rem;
