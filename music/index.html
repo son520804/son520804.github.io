@@ -2,34 +2,38 @@
 layout: default
 title: InSon's Music
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Music — In Son</title>
-  <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <section class="inner">
-      <h1>Music Compositions & Recordings</h1>
-      <p>I compose and arrange music for solo instruments, chamber ensembles and a cappella. My purpose is to explore expressive composition that connects classical forms with contemporary textures. Below is a curated catalog; click a track to stream it. Use the gallery to view photos and videos from releases and events.</p>
 
-      <h2>Catalog</h2>
-      <div id="music-grid" class="music-grid">
-        <!-- JS will populate this area from data.json -->
-        <p class="muted">Loading music list…</p>
+<section class="inner">
+  <h1>Music Compositions & Recordings</h1>
+  <p>I compose and arrange music for solo instruments, chamber ensembles and a cappella. My purpose is to explore expressive composition that connects classical forms with contemporary textures. Below is a curated catalog; click a track to stream it. Use the gallery to view photos and videos from releases and events.</p>
+
+  <div class="music-gallery-wrapper">
+    <div class="music-toolbar">
+      <div>
+        <strong>Catalog</strong>
+        <span class="muted"> — Click a card to expand controls</span>
       </div>
-
-      <h2 style="margin-top:2rem">Gallery: Photos & Videos</h2>
-      <div id="music-gallery" class="gallery-grid">
-        <!-- JS will populate gallery thumbnails; add image files to this folder or update data.json -->
-        <p class="muted">Add images or videos to the music folder and list them in data.json for them to appear here.</p>
+      <div>
+        <label class="muted">Filter: </label>
+        <select id="music-filter">
+          <option value="all">All</option>
+        </select>
       </div>
+    </div>
 
-      <p style="margin-top:1.5rem">Want to contribute or request a piece? <a href="mailto:inson331composer@gmail.com">Email me</a>.</p>
-    </section>
+    <div id="music-grid" class="music-grid">
+      <!-- JS will populate this area from data.json -->
+      <p class="muted">Loading music list…</p>
+    </div>
+  </div>
 
-    <script src="/music/renderer.js" defer></script>
-  </body>
-</html>
+  <h2 style="margin-top:2rem">Gallery: Photos & Videos</h2>
+  <div id="music-gallery" class="gallery-grid">
+    <!-- JS will populate gallery thumbnails; add image files to this folder or update data.json -->
+    <p class="muted">Add images or videos to the music folder and list them in data.json for them to appear here.</p>
+  </div>
+
+  <p style="margin-top:1.5rem">Want to contribute or request a piece? <a href="mailto:inson331composer@gmail.com">Email me</a>.</p>
+</section>
+
+<script src="/music/renderer2.js" defer></script>

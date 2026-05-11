@@ -391,6 +391,54 @@ top of each other instead of next to each other */
 
 /* --- end merged music.css --- */
 
+/* Music gallery visuals and responsive columns */
+.music-gallery-wrapper{
+  margin: 2.2rem auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.music-grid{
+  display: grid;
+  gap: 1rem;
+  /* default: 2 columns on small screens */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 700px){
+  .music-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1000px){
+  .music-grid{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 1300px){
+  .music-grid{ grid-template-columns: repeat(5, 1fr); }
+}
+
+.music-item{
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.98));
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.music-item:hover{ transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
+
+.music-thumb{ height: 140px; background-size: cover; background-position: center; }
+.music-title{ font-weight:700; margin:12px 12px 6px 12px; font-size:1rem; }
+.music-desc{ font-size:0.9rem; color:#666; margin:0 12px 12px 12px; }
+
+.music-audio{ margin: 0 12px 12px 12px; width: calc(100% - 24px); }
+
+.music-toolbar{ display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:1rem; }
+.music-toolbar .muted{ margin:0; }
+
+/* small accessibility tweak for audio controls */
+audio{ width:100%; }
+
+
 nav {
   ul{
     list-style:none;
