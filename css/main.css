@@ -361,6 +361,36 @@ top of each other instead of next to each other */
   .music-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
 }
 
+/* --- music.css content merged below --- */
+
+/* Music page specific styles */
+
+#music-grid .music-item, .music-grid .music-item{
+  background: #fff;
+  color: #222;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.music-title{ font-weight:700; margin-bottom:6px; }
+.music-desc{ font-size:0.95rem; color:#444; margin-bottom:8px; }
+
+.gallery-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:0.6rem;
+  margin-top: 0.75rem;
+}
+
+.gallery-grid img{ width:100%; height: auto; border-radius:6px; display:block; }
+
+@media (prefers-color-scheme: dark){
+  #music-grid .music-item, .music-grid .music-item{ background: rgba(255,255,255,0.04); color: #eee; }
+}
+
+/* --- end merged music.css --- */
+
 nav {
   ul{
     list-style:none;

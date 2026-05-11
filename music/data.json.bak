@@ -1,0 +1,23 @@
+[
+  {
+    "id": "lotus",
+    "title": "Lotus Symphony 1st Movement (Op.2)",
+    "file": "/music/Lotus_Symphony_1st_mov.mp3",
+    "year": 2015,
+    "description": "First movement of Lotus Symphony"
+  },
+  {
+    "id": "unfade",
+    "title": "Unfading Memories (Op.1)",
+    "file": "/music/Unfading_Memories.mp3",
+    "year": 2014,
+    "description": "Piano solo"
+  },
+  {
+    "id": "flute1",
+    "title": "Flute Concerto No.1 1st Movement (Op.19)",
+    "file": "/music/Flute_Concerto_No.1_Op.19_1st_mov.mp3",
+    "year": 2018,
+    "description": "Concerto for flute and orchestra"
+  }
+]
